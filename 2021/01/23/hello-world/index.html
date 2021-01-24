@@ -9,8 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="记录日常工作学习心得">
     <meta name="keyword"  content="">
-    <link rel="shortcut icon" href="/img/favicon.ico">
-
+    <link rel="shortcut icon" href="/img/ironman-draw.png">
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
     <title>
         
           Hello World - undefined
@@ -24,14 +25,34 @@
 <link rel="stylesheet" href="/css/bootstrap.min.css">
 
 
-    <!-- Custom CSS -->
+    <!-- Custom CSS --> 
     
-<link rel="stylesheet" href="/css/hux-blog.min.css">
+<link rel="stylesheet" href="/css/beantech.min.css">
 
 
+    
+<link rel="stylesheet" href="/css/donate.css">
+
+    
     <!-- Pygments Highlight CSS -->
     
 <link rel="stylesheet" href="/css/highlight.css">
+
+
+    
+<link rel="stylesheet" href="/css/widget.css">
+
+
+    
+<link rel="stylesheet" href="/css/rocket.css">
+
+
+    
+<link rel="stylesheet" href="/css/signature.css">
+
+
+    
+<link rel="stylesheet" href="/css/toc.css">
 
 
     <!-- Custom Fonts -->
@@ -61,7 +82,46 @@
 
 <!-- hack iOS CSS :active style -->
 <body ontouchstart="">
+	<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        
+            background-image: url('')
+            /*post*/
+        
+    }
+    
+</style>
 
+<header class="intro-header" >
+    <!-- Signature -->
+    <div id="signature">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                
+                    <div class="post-heading">
+                        <div class="tags">
+                            
+                        </div>
+                        <h1>Hello World</h1>
+                        <h2 class="subheading"></h2>
+                        <span class="meta">
+                            Posted by Kyle Zheng on
+                            2021-01-23
+                        </span>
+                    </div>
+                
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+	
     <!-- Navigation -->
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
     <div class="container-fluid">
@@ -129,43 +189,14 @@
 
 
     <!-- Main Content -->
-    
-<!-- Image to hack wechat -->
-<!-- <img src="http://SirKayZh.github.io/img/icon_wechat.png" width="0" height="0"> -->
-<!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
-
-<!-- Post Header -->
-<style type="text/css">
-    header.intro-header{
-        background-image: url('/undefined')
-    }
-</style>
-<header class="intro-header" >
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-heading">
-                    <div class="tags">
-                        
-                    </div>
-                    <h1>Hello World</h1>
-                    <h2 class="subheading"></h2>
-                    <span class="meta">
-                        Posted by Kyle Zheng on
-                        2021-01-23
-                    </span>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
+    <!-- Modify by Yu-Hsuan Yen -->
 
 <!-- Post Content -->
 <article>
     <div class="container">
         <div class="row">
 
-    <!-- Post Container -->
+            <!-- Post Container -->
             <div class="
                 col-lg-8 col-lg-offset-2
                 col-md-10 col-md-offset-1
@@ -181,26 +212,51 @@
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 
-
-                <hr>
-
                 
 
+                <hr>
+                <!-- Pager -->
                 <ul class="pager">
                     
                     
                 </ul>
 
+                <br>
+
+                <!--打赏-->
                 
+                <!--打赏-->
+
+                <br>
+                <!--分享-->
+                
+                <!--分享-->
+                <br>                       
+                
+                <!-- require APlayer -->
+                
+
+                <!-- duoshuo Share start -->
+                
+                <!-- 多说 Share end-->
+
+                <!-- 多说评论框 start -->
+                
+                <!-- 多说评论框 end -->
+
+                <!-- disqus comment start -->
+                
+                <!-- disqus comment end -->
 
                 
 
             </div>
-    <!-- Side Catalog Container -->
-        
+            
+            <!-- Tabe of Content -->
+            <!-- Table of Contents -->
 
-    <!-- Sidebar Container -->
-
+                
+            <!-- Sidebar Container -->
             <div class="
                 col-lg-8 col-lg-offset-2
                 col-md-10 col-md-offset-1
@@ -212,7 +268,6 @@
                 <!-- Friends Blog -->
                 
             </div>
-
         </div>
     </div>
 </article>
@@ -223,6 +278,25 @@
 
 
 
+
+
+<!-- chrome Firefox 中文锚点定位失效-->
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+<!-- smooth scroll behavior polyfill  -->
+<script type="text/javascript" src="/js/smoothscroll.js"></script>
+<script>
+        $('#toc').on('click','a',function(a){
+            // var isChrome = window.navigator.userAgent.indexOf("Chrome") !== -1;
+            // console.log(window.navigator.userAgent,isChrome)
+                // if(isChrome) {
+                    // console.log(a.currentTarget.outerHTML);
+                    // console.log($(a.currentTarget).attr("href"));
+                    //跳转到指定锚点
+                    // document.getElementById(a.target.innerText.toLowerCase()).scrollIntoView(true);
+                    document.getElementById($(a.currentTarget).attr("href").replace("#","")).scrollIntoView({behavior: 'smooth' });
+                // }
+        })  
+</script>
 
 
     <!-- Footer -->
@@ -246,17 +320,17 @@
 
                 </ul>
                 <p class="copyright text-muted">
-                    Copyright &copy; 集思录 2021 
+                    Copyright &copy; Kyle Zheng 2021 
                     <br>
-                    Theme by <a target="_blank" rel="noopener" href="http://huangxuan.me">Hux</a> 
+                    Theme by <a target="_blank" rel="noopener" href="http://beantech.org">BeanTech</a> 
                     <span style="display: inline-block; margin: 0 5px;">
                         <i class="fa fa-heart"></i>
                     </span> 
-                    Ported by <a target="_blank" rel="noopener" href="http://blog.kaijun.rocks">Kaijun</a> | 
+                    re-Ported by <a target="_blank" rel="noopener" href="http://www.huweihuang.com">胡伟煌</a> | 
                     <iframe
                         style="margin-left: 2px; margin-bottom:-5px;"
                         frameborder="0" scrolling="0" width="91px" height="20px"
-                        src="https://ghbtns.com/github-btn.html?user=kaijun&repo=hexo-theme-huxblog&type=star&count=true" >
+                        src="https://ghbtns.com/github-btn.html?user=huweihuang&repo=hexo-theme-huweihuang&type=star&count=true" >
                     </iframe>
                 </p>
             </div>
@@ -342,12 +416,13 @@
 <!-- Baidu Tongji -->
 
 
-<!-- Side Catalog -->
 
 
 
 
-
+	<a id="rocket" href="#top" class=""></a>
+	<script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+    <script type="text/javascript" src="/js/toc.js?v=1.0.0" async=""></script>
 <!-- Image to hack wechat -->
 <img src="http://SirKayZh.github.io/img/icon_wechat.png" width="0" height="0" />
 <!-- Migrate from head to bottom, no longer block render and still work -->
