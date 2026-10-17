@@ -1,4 +1,4 @@
-/* SirKayZh 个人主页 — 首页卡片 + 项目详情页渲染
+/* 大号哥 个人主页（GitHub ID: SirKayZh） — 首页卡片 + 项目详情页渲染
  * 数据源：data/projects.json（手写元信息）+ data/releases.json（GitHub Release 自动同步）
  */
 (function () {
@@ -203,7 +203,7 @@
     var primary = matched && matched.primary;
     var hasDownload = rel && rel.assets && rel.assets.length > 0;
 
-    document.title = p.name + " · SirKayZh";
+    document.title = p.name + " · 大号哥";
 
     var html = "";
 

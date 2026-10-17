@@ -1,6 +1,7 @@
-# SirKayZh.github.io
+# 大号哥个人主页（sirkayzh.github.io）
 
 个人开发者主页：集中展示开源项目并提供安装包下载。
+品牌名「**大号哥**」，GitHub ID 为 SirKayZh（GitHub Pages 强制要求用户站仓库名必须是 `<username>.github.io`，故仓库不可改名）。
 
 **线上地址**：https://sirkayzh.github.io
 
