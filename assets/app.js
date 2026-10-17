@@ -203,7 +203,7 @@
     var primary = matched && matched.primary;
     var hasDownload = rel && rel.assets && rel.assets.length > 0;
 
-    document.title = p.name + " · 大号哥";
+    document.title = p.name + " · 大号哥的仓库";
 
     var html = "";
 
