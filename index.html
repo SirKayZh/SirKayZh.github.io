@@ -1,1 +1,58 @@
-欢迎
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SirKayZh · 开源桌面工具</title>
+  <meta name="description" content="MarkMate Markdown 编辑器、CloudDock 多账号浏览器、微信瘦身找回助手 — 全部开源免费下载">
+  <meta property="og:title" content="SirKayZh · 开源桌面工具">
+  <meta property="og:description" content="亲手做的 macOS / Windows 桌面软件，开源且免费">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/img/clouddock/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="home">
+  <nav class="nav">
+    <a class="nav-brand" href="./"><span class="nav-logo">⚡</span>SirKayZh</a>
+    <div class="nav-links">
+      <a href="https://github.com/SirKayZh" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <h1>亲手做的桌面工具<br><span class="accent">开源 · 免费 · 无广告</span></h1>
+      <p class="hero-sub">专注 macOS / Windows 上的实用软件：Markdown 编辑器、多账号浏览器、磁盘清理。<br>全部源码在 GitHub，安装包免费下载。</p>
+      <div class="hero-badges">
+        <span class="badge">🛠 独立开发</span>
+        <span class="badge">📦 开源可审计</span>
+        <span class="badge">💸 完全免费</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="section">
+      <div class="section-head">
+        <h2>全部项目</h2>
+        <p class="section-note">下载按钮已按你的操作系统自动匹配<span id="os-hint"></span></p>
+      </div>
+      <div id="projects" class="cards">
+        <div class="loading">正在加载项目信息…</div>
+      </div>
+    </section>
+
+    <section class="section toc-section" id="about">
+      <div class="section-head"><h2>关于</h2></div>
+      <p>我是 SirKayZh，一个喜欢动手解决自己问题的开发者：写作嫌编辑器不顺手就写了 MarkMate，多账号切换登录烦了就写了 CloudDock，微信占满磁盘就写了瘦身找回助手。每个项目都先给自己用，再开源分享给所有人。</p>
+      <p>遇到问题或想要新功能？欢迎在对应项目的 GitHub 提 <a href="https://github.com/SirKayZh" target="_blank" rel="noopener">Issue</a>，我会认真看每一条。</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> SirKayZh · 版本数据每 24 小时自动同步自 GitHub Release</p>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

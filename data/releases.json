@@ -1,0 +1,66 @@
+{
+  "updated_at": "2026-10-17T08:01:50.683802+00:00",
+  "releases": {
+    "markmate": {
+      "tag": "v2.2.0",
+      "name": "MarkMate v2.2.0",
+      "published_at": "2026-10-14T13:19:11Z",
+      "notes_md": "## MarkMate v2.2.0\n\n这一版把 Microsoft Word 的两项经典设计带到了 MarkMate：**输入时自动纠正**和**打不开的文件尽力抢救**。全部改动经过 53 项自动化测试验证（27 项回归 + 26 项新功能专项）。\n\n### ✨ 全角符号自动纠正\n\n用中文输入法写作时，偶尔会敲出全角的 ＊｀＃＿ —— 它们会让粗体、行内代码、标题、斜体这些语法悄悄失效，往往要等渲染不对劲了才发现。现在这类符号会在**输入的同时**自动纠正为半角，不用再回头逐个检查。\n\n- 全角的 － 和 ＞（比如「1－2月」里是正常用法）只在该做列表、引用的行首位置才纠正，正文里出现不会被动。\n- ，。！？；：「」【】（）这些正常中文标点**一律不动**。\n- 用拼音输入法打字、组词的过程中不会误触发，不影响输入体验。\n- 不喜欢的话，在「视图」菜单随时关闭；设置会记住，并对所有窗口生效。\n\n### ✨ 打开文件更聪明\n\n- 能直接打开 Windows 旧版记事本保存的 **UTF-16 格式** .md 文件，不再显示乱码。\n- 文件编码有损坏时（比如传输中断截断了字节），不再满屏乱码，而是**尽可能恢复出可读的内容**，并在底部状态栏提示你文件有问题。\n- 误选了图片、程序等二进制文件时，会明确告诉你「这不是文本文件」，而不是把乱码摊开在编辑器里。\n\n### 🔒 保存保护覆盖到所有出口\n\n上一版把主保存流程改成了「先写临时文件、再原子替换」，中途崩溃或断电不会留下半截文件。这一版把同样的保护铺到了**每一个**写入出口：\n\n- 版本历史快照（快照损坏 = 历史版本再也打不开）\n- 崩溃恢复草稿（草稿损坏 = 崩溃后恢复直接失效）\n- 导出的 HTML / PDF / Word / 纯文本\n- 粘贴和插入时保存的图片文件\n\n现在任何一次写入被打断，磁盘上要么是完整的旧内容、要么是完整的新内容，不会再有第三种状态。\n\n---\n\n**完整改动清单**见 [CHANGELOG.md](https://github.com/SirKayZh/markmate/blob/main/CHANGELOG.md)。\n",
+      "html_url": "https://github.com/SirKayZh/markmate/releases/tag/v2.2.0",
+      "assets": [
+        {
+          "name": "MarkMate-2.2.0-arm64-mac.zip",
+          "size": 98900369,
+          "download_count": 0,
+          "url": "https://github.com/SirKayZh/markmate/releases/download/v2.2.0/MarkMate-2.2.0-arm64-mac.zip"
+        },
+        {
+          "name": "MarkMate-2.2.0-arm64.dmg",
+          "size": 112312267,
+          "download_count": 0,
+          "url": "https://github.com/SirKayZh/markmate/releases/download/v2.2.0/MarkMate-2.2.0-arm64.dmg"
+        },
+        {
+          "name": "MarkMate-2.2.0-mac.zip",
+          "size": 104955383,
+          "download_count": 0,
+          "url": "https://github.com/SirKayZh/markmate/releases/download/v2.2.0/MarkMate-2.2.0-mac.zip"
+        },
+        {
+          "name": "MarkMate-2.2.0-x64-portable.exe",
+          "size": 83805503,
+          "download_count": 1,
+          "url": "https://github.com/SirKayZh/markmate/releases/download/v2.2.0/MarkMate-2.2.0-x64-portable.exe"
+        },
+        {
+          "name": "MarkMate-2.2.0-x64-setup.exe",
+          "size": 84023356,
+          "download_count": 0,
+          "url": "https://github.com/SirKayZh/markmate/releases/download/v2.2.0/MarkMate-2.2.0-x64-setup.exe"
+        },
+        {
+          "name": "MarkMate-2.2.0-x64.dmg",
+          "size": 121821066,
+          "download_count": 0,
+          "url": "https://github.com/SirKayZh/markmate/releases/download/v2.2.0/MarkMate-2.2.0-x64.dmg"
+        }
+      ]
+    },
+    "clouddock": {
+      "tag": "v1.7.0",
+      "name": "CloudDock v1.7.0",
+      "published_at": "2026-10-15T01:15:19Z",
+      "notes_md": "## 新特性\n\n### 网页右键菜单\nElectron 不内置 Chromium 右键菜单，此版本为页面区域补上完整的 Chrome 风格右键菜单：\n- 链接：在新标签页打开 / 在系统浏览器打开 / 复制链接地址\n- 图片：复制图片地址\n- 可编辑区：撤销 / 重做 / 剪切 / 复制 / 粘贴 / 全选\n- 通用：后退 / 前进 / 重新加载 / 在系统浏览器打开当前页 / 检查元素\n\n### 新建标签页零冷启动\n移植 Chrome SpareRenderProcessHost 机制：为活跃账号维持一个隐藏预热视图，新建标签页（⌘T / 链接新开）直接转正，省掉现场拉起渲染进程的 150-400ms；消费后自动补位，附带预连接账号首页。\n\n## 安装\n\n下载 `CloudDock-1.7.0.dmg`，拖入 Applications 即可。\n\n已有用户可在应用内「帮助 ▸ 检查更新…」使用 `CloudDock-1.7.0-update.zip`（SHA-256 见 release/update.json 清单）。\n\nSHA-256\n- dmg: 68cdc32cfdbd765d11829f9c92a168daf02130ac35eb2fd06fd05814b433e2d6\n- zip: 37de39ebb40054d9cd15c377a7ba7f10419766983b3f57a9ccc515f5b07bd702",
+      "html_url": "https://github.com/SirKayZh/clouddock/releases/tag/v1.7.0",
+      "assets": [
+        {
+          "name": "CloudDock-1.7.0.dmg",
+          "size": 141988394,
+          "download_count": 0,
+          "url": "https://github.com/SirKayZh/clouddock/releases/download/v1.7.0/CloudDock-1.7.0.dmg"
+        }
+      ]
+    },
+    "wechat-cleaner": null
+  }
+}

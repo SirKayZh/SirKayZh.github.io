@@ -1,0 +1,110 @@
+{
+  "site": {
+    "name": "SirKayZh",
+    "tagline": "独立开发者 · 亲手做的桌面工具",
+    "intro": "专注 macOS / Windows 上的实用桌面软件：编辑器、多账号浏览器、磁盘清理。全部开源，安装包免费下载。",
+    "github": "https://github.com/SirKayZh",
+    "footer_note": "所有工具均可免费使用，欢迎在 GitHub 提 Issue 反馈"
+  },
+  "projects": [
+    {
+      "slug": "markmate",
+      "name": "MarkMate",
+      "tagline": "轻量 WYSIWYG Markdown 编辑器",
+      "description": "所见即所得的 Markdown 编辑器，macOS / Windows 双平台。即时编辑、大纲导航、自动保存，内置 JSON / YAML / XML 查看器，一键导出 PDF / HTML / Word。",
+      "repo": "SirKayZh/markmate",
+      "platforms": ["macOS", "Windows"],
+      "icon": "assets/img/markmate/icon.png",
+      "featured": true,
+      "order": 1,
+      "highlights": [
+        "所见即所得编辑 — 打开即写，无需分屏预览",
+        "大纲导航 — 长文档章节跳转",
+        "自动保存 + 版本历史 — 不怕丢稿",
+        "JSON / YAML / XML / JSONL 查看器 — 对话记录也能看",
+        "导出 PDF / HTML / Word (.docx)",
+        "macOS (Apple Silicon / Intel) + Windows 双平台"
+      ],
+      "screenshots": [
+        { "src": "assets/img/markmate/hero.png", "caption": "主界面 · macOS 浅色模式" },
+        { "src": "assets/img/markmate/json-viewer.png", "caption": "JSON 查看器（含语法错误定位）" },
+        { "src": "assets/img/markmate/export.png", "caption": "多格式导出" }
+      ],
+      "downloads": {
+        "macos-arm64": { "prefer": ["arm64.dmg"], "any": [".dmg"] },
+        "macos-x64": { "prefer": ["x64.dmg", "-x64.dmg"], "any": [".dmg"] },
+        "windows-x64": { "prefer": ["setup.exe"], "any": [".exe"] }
+      },
+      "install": {
+        "macos": "双击 .dmg 安装，将 MarkMate 拖入「应用程序」。首次打开若提示「无法验证开发者」，在 Finder 中右键 App 选「打开」，或在终端执行 xattr -cr /Applications/MarkMate.app",
+        "windows": "运行 setup.exe 按引导安装；portable.exe 为绿色便携版，双击即用不写注册表"
+      },
+      "faq": [
+        { "q": "和 Typora 有什么区别？", "a": "MarkMate 免费开源，同样支持所见即所得编辑，额外内置 JSON/YAML/XML 结构化文件查看器和版本历史。" },
+        { "q": "支持哪些系统？", "a": "macOS 12+（Apple Silicon 与 Intel 均有原生包）和 Windows 10/11 (x64)。" }
+      ]
+    },
+    {
+      "slug": "clouddock",
+      "name": "CloudDock",
+      "tagline": "多账号浏览器",
+      "description": "像 Chrome 一样浏览任意网站，但每个账号一个独立会话：同一网站同时登录多个账号，侧边栏一键切换，无需退出重登。",
+      "repo": "SirKayZh/clouddock",
+      "platforms": ["macOS"],
+      "icon": "assets/img/clouddock/icon.svg",
+      "featured": true,
+      "order": 2,
+      "highlights": [
+        "多账号独立会话 — Cookie / 缓存 / 存储完全隔离（Chromium session partition 级）",
+        "同一网站同时在线多个账号，侧边栏或 ⌘1~⌘9 秒切",
+        "每个账号可开多个标签页，登录态共享",
+        "添加账号零输入 — 网页里正常登录，账号名自动识别",
+        "持久登录 + 重启自动恢复全部会话",
+        "记住密码（对齐 Chrome 行为）— AES-256-GCM 加密，密钥存系统钥匙串，独立子进程加解密"
+      ],
+      "screenshots": [],
+      "downloads": {
+        "macos-arm64": { "prefer": [".dmg"], "any": [".dmg"] },
+        "macos-x64": { "prefer": [".dmg"], "any": [".dmg"] }
+      },
+      "install": {
+        "macos": "双击 .dmg 安装，将 CloudDock 拖入「应用程序」。首次打开若提示「无法验证开发者」，在 Finder 中右键 App 选「打开」，或在终端执行 xattr -cr /Applications/CloudDock.app",
+        "windows": ""
+      },
+      "faq": [
+        { "q": "和多个浏览器 Profile 有什么区别？", "a": "Profile 之间切换要整窗重载；CloudDock 是会话级隔离，每个账号一个独立会话，侧边栏点击即切，不重载页面，且所有账号同屏共存。" },
+        { "q": "密码安全吗？", "a": "密码使用 AES-256-GCM 加密，主密钥存放在 macOS 登录钥匙串；加解密在独立最小权限子进程完成，明文不进主进程内存，磁盘只存密文。" }
+      ]
+    },
+    {
+      "slug": "wechat-cleaner",
+      "name": "微信瘦身找回助手",
+      "tagline": "微信重复文件清理与误删找回",
+      "description": "macOS 本地图形界面工具：扫描微信目录，按内容指纹识别完全相同的重复文件，安全清理回收磁盘空间，还能一键找回被清理的文件。",
+      "repo": "SirKayZh/wechat-cleaner",
+      "platforms": ["macOS"],
+      "icon": "assets/img/wechat-cleaner/icon.png",
+      "featured": false,
+      "order": 3,
+      "highlights": [
+        "按内容指纹识别重复 — 改了文件名的真重复也能找出",
+        "保留最新一份，其余安全移入废纸篓（不直接删除）",
+        "找回文件 — 搜文件名，从存活副本复制找回 / 访达定位",
+        "总览 → 清理 → 找回 三个标签页，全程图形界面零命令行",
+        "原生 Mac App，退出自动关闭后台服务"
+      ],
+      "screenshots": [
+        { "src": "assets/img/wechat-cleaner/hero.png", "caption": "主界面 · 扫描总览" }
+      ],
+      "downloads": null,
+      "install": {
+        "macos": "首次运行需授权一次「完全磁盘访问权限」，应用会自动弹出引导",
+        "windows": ""
+      },
+      "faq": [
+        { "q": "会误删文件吗？", "a": "不会直接删除任何文件——所有清理都是移入废纸篓，可以随时取回；即使废纸篓清空，也能通过「找回文件」从内容相同的存活副本恢复。" },
+        { "q": "什么时候开放下载？", "a": "正在整理开源发布，即将上架 GitHub Release。" }
+      ]
+    }
+  ]
+}

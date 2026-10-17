@@ -1,0 +1,46 @@
+name: Update releases data
+
+# 每天自动拉取各项目最新 GitHub Release → 更新 data/releases.json
+# releases.json 变化时 GitHub Pages 会随 main 分支自动重新部署
+on:
+  schedule:
+    - cron: "17 2 * * *" # UTC 02:17 = 北京时间 10:17，错开整点
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/update_releases.py"
+      - "data/projects.json"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-releases
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Sync releases
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/update_releases.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name "release-bot"
+          git config user.email "actions@github.com"
+          git add data/releases.json
+          if git diff --cached --quiet; then
+            echo "no changes"
+          else
+            git commit -m "chore: sync releases.json [skip ci]"
+            git push
+          fi
