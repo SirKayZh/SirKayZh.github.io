@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-17T08:01:50.683802+00:00",
+  "updated_at": "2026-10-19T15:50:07.979079+00:00",
   "releases": {
     "markmate": {
       "tag": "v2.2.0",
@@ -11,53 +11,53 @@
         {
           "name": "MarkMate-2.2.0-arm64-mac.zip",
           "size": 98900369,
-          "download_count": 0,
+          "download_count": 1,
           "url": "https://github.com/SirKayZh/markmate/releases/download/v2.2.0/MarkMate-2.2.0-arm64-mac.zip"
         },
         {
           "name": "MarkMate-2.2.0-arm64.dmg",
           "size": 112312267,
-          "download_count": 0,
+          "download_count": 1,
           "url": "https://github.com/SirKayZh/markmate/releases/download/v2.2.0/MarkMate-2.2.0-arm64.dmg"
         },
         {
           "name": "MarkMate-2.2.0-mac.zip",
           "size": 104955383,
-          "download_count": 0,
+          "download_count": 1,
           "url": "https://github.com/SirKayZh/markmate/releases/download/v2.2.0/MarkMate-2.2.0-mac.zip"
         },
         {
           "name": "MarkMate-2.2.0-x64-portable.exe",
           "size": 83805503,
-          "download_count": 1,
+          "download_count": 2,
           "url": "https://github.com/SirKayZh/markmate/releases/download/v2.2.0/MarkMate-2.2.0-x64-portable.exe"
         },
         {
           "name": "MarkMate-2.2.0-x64-setup.exe",
           "size": 84023356,
-          "download_count": 0,
+          "download_count": 1,
           "url": "https://github.com/SirKayZh/markmate/releases/download/v2.2.0/MarkMate-2.2.0-x64-setup.exe"
         },
         {
           "name": "MarkMate-2.2.0-x64.dmg",
           "size": 121821066,
-          "download_count": 0,
+          "download_count": 1,
           "url": "https://github.com/SirKayZh/markmate/releases/download/v2.2.0/MarkMate-2.2.0-x64.dmg"
         }
       ]
     },
     "clouddock": {
-      "tag": "v1.7.0",
-      "name": "CloudDock v1.7.0",
-      "published_at": "2026-10-15T01:15:19Z",
-      "notes_md": "## 新特性\n\n### 网页右键菜单\nElectron 不内置 Chromium 右键菜单，此版本为页面区域补上完整的 Chrome 风格右键菜单：\n- 链接：在新标签页打开 / 在系统浏览器打开 / 复制链接地址\n- 图片：复制图片地址\n- 可编辑区：撤销 / 重做 / 剪切 / 复制 / 粘贴 / 全选\n- 通用：后退 / 前进 / 重新加载 / 在系统浏览器打开当前页 / 检查元素\n\n### 新建标签页零冷启动\n移植 Chrome SpareRenderProcessHost 机制：为活跃账号维持一个隐藏预热视图，新建标签页（⌘T / 链接新开）直接转正，省掉现场拉起渲染进程的 150-400ms；消费后自动补位，附带预连接账号首页。\n\n## 安装\n\n下载 `CloudDock-1.7.0.dmg`，拖入 Applications 即可。\n\n已有用户可在应用内「帮助 ▸ 检查更新…」使用 `CloudDock-1.7.0-update.zip`（SHA-256 见 release/update.json 清单）。\n\nSHA-256\n- dmg: 68cdc32cfdbd765d11829f9c92a168daf02130ac35eb2fd06fd05814b433e2d6\n- zip: 37de39ebb40054d9cd15c377a7ba7f10419766983b3f57a9ccc515f5b07bd702",
-      "html_url": "https://github.com/SirKayZh/clouddock/releases/tag/v1.7.0",
+      "tag": "v1.7.1",
+      "name": "CloudDock v1.7.1",
+      "published_at": "2026-10-19T15:49:57Z",
+      "notes_md": "## 修复\n\n### 密码库静默失效（v1.6.0 起的回归）\n- 根因：vaultClient 缺失应答监听，子进程回复无人接收，所有密码库操作必然超时——重启后表现为「密码全没了」，实际密文完好\n- vaultClient 补上消息分发 + 初始化超时 20s→60s + 支持自动重试（杀旧子进程重拉）\n- 密码菜单失败时显示「⚠️ 初始化失败 · 重试初始化…」，不再静默\n- 初始化不再做破坏性清空：磁盘密文永远保留，删除只走显式删除账号\n\n### 其他\n- 部署脚本同步 Info.plist / app package.json 版本号（此前显示 1.5.0 误导排障）\n- ⚠️ Bundle ID 由 com.dylanzheng.clouddock 变更为 com.sirkayzh.clouddock：从旧版升级后 macOS 可能要求重新授权一次「完全磁盘访问」等权限；密码库钥匙串条目名未变，已保存密码不受影响\n\n## 测试\n新增 tests/vaultChild.test.ts 7 用例（含初始化不清空磁盘回归），vitest 31/31 通过，tsc 零错误。\n\n## 安装\n下载 `CloudDock-1.7.1.dmg`，拖入 Applications。已有用户可在应用内「帮助 ▸ 检查更新…」使用 `CloudDock-1.7.1-update.zip`。\n\nSHA-256\n- dmg: e3f39238dcc8062bb7caaa872c27a3d83040e8a1fa05cf487b405207bb3dd2e7\n- zip: 60304cde3b44a0d73fb97dca235665c2c7a215cf9ef3b93a35082221c27059d8",
+      "html_url": "https://github.com/SirKayZh/clouddock/releases/tag/v1.7.1",
       "assets": [
         {
-          "name": "CloudDock-1.7.0.dmg",
-          "size": 141988394,
+          "name": "CloudDock-1.7.1.dmg",
+          "size": 141990422,
           "download_count": 0,
-          "url": "https://github.com/SirKayZh/clouddock/releases/download/v1.7.0/CloudDock-1.7.0.dmg"
+          "url": "https://github.com/SirKayZh/clouddock/releases/download/v1.7.1/CloudDock-1.7.1.dmg"
         }
       ]
     },
