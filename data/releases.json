@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T15:50:07.979079+00:00",
+  "updated_at": "2026-10-20T02:19:59.663712+00:00",
   "releases": {
     "markmate": {
       "tag": "v2.2.0",
@@ -11,37 +11,37 @@
         {
           "name": "MarkMate-2.2.0-arm64-mac.zip",
           "size": 98900369,
-          "download_count": 1,
+          "download_count": 2,
           "url": "https://github.com/SirKayZh/markmate/releases/download/v2.2.0/MarkMate-2.2.0-arm64-mac.zip"
         },
         {
           "name": "MarkMate-2.2.0-arm64.dmg",
           "size": 112312267,
-          "download_count": 1,
+          "download_count": 2,
           "url": "https://github.com/SirKayZh/markmate/releases/download/v2.2.0/MarkMate-2.2.0-arm64.dmg"
         },
         {
           "name": "MarkMate-2.2.0-mac.zip",
           "size": 104955383,
-          "download_count": 1,
+          "download_count": 2,
           "url": "https://github.com/SirKayZh/markmate/releases/download/v2.2.0/MarkMate-2.2.0-mac.zip"
         },
         {
           "name": "MarkMate-2.2.0-x64-portable.exe",
           "size": 83805503,
-          "download_count": 2,
+          "download_count": 3,
           "url": "https://github.com/SirKayZh/markmate/releases/download/v2.2.0/MarkMate-2.2.0-x64-portable.exe"
         },
         {
           "name": "MarkMate-2.2.0-x64-setup.exe",
           "size": 84023356,
-          "download_count": 1,
+          "download_count": 2,
           "url": "https://github.com/SirKayZh/markmate/releases/download/v2.2.0/MarkMate-2.2.0-x64-setup.exe"
         },
         {
           "name": "MarkMate-2.2.0-x64.dmg",
           "size": 121821066,
-          "download_count": 1,
+          "download_count": 2,
           "url": "https://github.com/SirKayZh/markmate/releases/download/v2.2.0/MarkMate-2.2.0-x64.dmg"
         }
       ]
@@ -56,7 +56,7 @@
         {
           "name": "CloudDock-1.7.1.dmg",
           "size": 141990422,
-          "download_count": 0,
+          "download_count": 1,
           "url": "https://github.com/SirKayZh/clouddock/releases/download/v1.7.1/CloudDock-1.7.1.dmg"
         }
       ]
