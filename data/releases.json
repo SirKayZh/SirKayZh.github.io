@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T02:19:59.663712+00:00",
+  "updated_at": "2026-10-21T07:42:49.050217+00:00",
   "releases": {
     "markmate": {
       "tag": "v2.2.0",
@@ -56,7 +56,7 @@
         {
           "name": "CloudDock-1.7.1.dmg",
           "size": 141990422,
-          "download_count": 1,
+          "download_count": 2,
           "url": "https://github.com/SirKayZh/clouddock/releases/download/v1.7.1/CloudDock-1.7.1.dmg"
         }
       ]
