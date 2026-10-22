@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T07:42:49.050217+00:00",
+  "updated_at": "2026-10-22T07:38:36.081084+00:00",
   "releases": {
     "markmate": {
       "tag": "v2.2.0",
@@ -17,7 +17,7 @@
         {
           "name": "MarkMate-2.2.0-arm64.dmg",
           "size": 112312267,
-          "download_count": 2,
+          "download_count": 3,
           "url": "https://github.com/SirKayZh/markmate/releases/download/v2.2.0/MarkMate-2.2.0-arm64.dmg"
         },
         {
@@ -35,7 +35,7 @@
         {
           "name": "MarkMate-2.2.0-x64-setup.exe",
           "size": 84023356,
-          "download_count": 2,
+          "download_count": 3,
           "url": "https://github.com/SirKayZh/markmate/releases/download/v2.2.0/MarkMate-2.2.0-x64-setup.exe"
         },
         {
@@ -51,13 +51,13 @@
       "name": "CloudDock v1.7.1",
       "published_at": "2026-10-19T15:49:57Z",
       "notes_md": "## 修复\n\n### 密码库静默失效（v1.6.0 起的回归）\n- 根因：vaultClient 缺失应答监听，子进程回复无人接收，所有密码库操作必然超时——重启后表现为「密码全没了」，实际密文完好\n- vaultClient 补上消息分发 + 初始化超时 20s→60s + 支持自动重试（杀旧子进程重拉）\n- 密码菜单失败时显示「⚠️ 初始化失败 · 重试初始化…」，不再静默\n- 初始化不再做破坏性清空：磁盘密文永远保留，删除只走显式删除账号\n\n### 其他\n- 部署脚本同步 Info.plist / app package.json 版本号（此前显示 1.5.0 误导排障）\n- ⚠️ Bundle ID 由 com.dylanzheng.clouddock 变更为 com.sirkayzh.clouddock：从旧版升级后 macOS 可能要求重新授权一次「完全磁盘访问」等权限；密码库钥匙串条目名未变，已保存密码不受影响\n\n## 测试\n新增 tests/vaultChild.test.ts 7 用例（含初始化不清空磁盘回归），vitest 31/31 通过，tsc 零错误。\n\n## 安装\n下载 `CloudDock-1.7.1.dmg`，拖入 Applications。已有用户可在应用内「帮助 ▸ 检查更新…」使用 `CloudDock-1.7.1-update.zip`。\n\nSHA-256\n- dmg: e3f39238dcc8062bb7caaa872c27a3d83040e8a1fa05cf487b405207bb3dd2e7\n- zip: 60304cde3b44a0d73fb97dca235665c2c7a215cf9ef3b93a35082221c27059d8",
-      "html_url": "https://github.com/SirKayZh/clouddock/releases/tag/v1.7.1",
+      "html_url": "https://github.com/SirKayZh/workpier/releases/tag/v1.7.1",
       "assets": [
         {
           "name": "CloudDock-1.7.1.dmg",
           "size": 141990422,
           "download_count": 2,
-          "url": "https://github.com/SirKayZh/clouddock/releases/download/v1.7.1/CloudDock-1.7.1.dmg"
+          "url": "https://github.com/SirKayZh/workpier/releases/download/v1.7.1/CloudDock-1.7.1.dmg"
         }
       ]
     },
