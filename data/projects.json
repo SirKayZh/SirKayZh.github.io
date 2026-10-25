@@ -1,8 +1,8 @@
 {
   "site": {
     "name": "大号哥的仓库",
-    "tagline": "独立开发者 · 亲手做的桌面工具",
-    "intro": "专注 macOS / Windows 上的实用桌面软件：编辑器、多账号浏览器、磁盘清理。全部开源，安装包免费下载。",
+    "tagline": "大厂产品经理 · 白天做方案，晚上写工具",
+    "intro": "一名大厂产品经理用 AI 编程亲手做的 macOS / Windows 桌面软件：编辑器、多账号浏览器、磁盘清理。全部开源，安装包免费下载。",
     "github": "https://github.com/SirKayZh",
     "footer_note": "所有工具均可免费使用，欢迎在 GitHub 提 Issue 反馈"
   },

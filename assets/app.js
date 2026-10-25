@@ -172,6 +172,7 @@
       }
       actions += '<a class="btn btn-ghost" href="projects/' + esc(p.slug) + '.html">详情 →</a>';
 
+      /* 早期下载量小，展示具体数字反而减分：满 100 才亮出来 */
       var dl = hasDownload ? totalDownloads(rel) : 0;
 
       return (
@@ -183,7 +184,7 @@
         '<div class="card-tagline">' + esc(p.tagline) + "</div>" +
         "</div></div>" +
         '<p class="card-desc">' + esc(p.description) + "</p>" +
-        '<div class="card-meta">' + chips + (dl ? '<span class="chip">⬇ ' + dl + " 次下载</span>" : "") + "</div>" +
+        '<div class="card-meta">' + chips + (dl >= 100 ? '<span class="chip">⬇ ' + dl + " 次下载</span>" : "") + "</div>" +
         '<div class="card-actions">' + actions + "</div>" +
         "</article>"
       );
