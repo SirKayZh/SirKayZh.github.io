@@ -1,63 +1,75 @@
 {
-  "updated_at": "2026-10-24T07:20:48.679188+00:00",
+  "updated_at": "2026-10-25T03:47:43.266714+00:00",
   "releases": {
     "markmate": {
-      "tag": "v2.2.0",
-      "name": "MarkMate v2.2.0",
-      "published_at": "2026-10-14T13:19:11Z",
-      "notes_md": "## MarkMate v2.2.0\n\n这一版把 Microsoft Word 的两项经典设计带到了 MarkMate：**输入时自动纠正**和**打不开的文件尽力抢救**。全部改动经过 53 项自动化测试验证（27 项回归 + 26 项新功能专项）。\n\n### ✨ 全角符号自动纠正\n\n用中文输入法写作时，偶尔会敲出全角的 ＊｀＃＿ —— 它们会让粗体、行内代码、标题、斜体这些语法悄悄失效，往往要等渲染不对劲了才发现。现在这类符号会在**输入的同时**自动纠正为半角，不用再回头逐个检查。\n\n- 全角的 － 和 ＞（比如「1－2月」里是正常用法）只在该做列表、引用的行首位置才纠正，正文里出现不会被动。\n- ，。！？；：「」【】（）这些正常中文标点**一律不动**。\n- 用拼音输入法打字、组词的过程中不会误触发，不影响输入体验。\n- 不喜欢的话，在「视图」菜单随时关闭；设置会记住，并对所有窗口生效。\n\n### ✨ 打开文件更聪明\n\n- 能直接打开 Windows 旧版记事本保存的 **UTF-16 格式** .md 文件，不再显示乱码。\n- 文件编码有损坏时（比如传输中断截断了字节），不再满屏乱码，而是**尽可能恢复出可读的内容**，并在底部状态栏提示你文件有问题。\n- 误选了图片、程序等二进制文件时，会明确告诉你「这不是文本文件」，而不是把乱码摊开在编辑器里。\n\n### 🔒 保存保护覆盖到所有出口\n\n上一版把主保存流程改成了「先写临时文件、再原子替换」，中途崩溃或断电不会留下半截文件。这一版把同样的保护铺到了**每一个**写入出口：\n\n- 版本历史快照（快照损坏 = 历史版本再也打不开）\n- 崩溃恢复草稿（草稿损坏 = 崩溃后恢复直接失效）\n- 导出的 HTML / PDF / Word / 纯文本\n- 粘贴和插入时保存的图片文件\n\n现在任何一次写入被打断，磁盘上要么是完整的旧内容、要么是完整的新内容，不会再有第三种状态。\n\n---\n\n**完整改动清单**见 [CHANGELOG.md](https://github.com/SirKayZh/markmate/blob/main/CHANGELOG.md)。\n",
-      "html_url": "https://github.com/SirKayZh/markmate/releases/tag/v2.2.0",
+      "tag": "v2.2.1",
+      "name": "MarkMate v2.2.1",
+      "published_at": "2026-10-24T12:08:07Z",
+      "notes_md": "# MarkMate v2.2.1\n\n修复 Windows 上的一个快捷键问题。\n\n## 🐛 修复\n\n- **Windows 下按 `Ctrl++` 无法放大界面**。此前「放大」快捷键在 Windows 键盘上始终无效（缩小 `Ctrl+-` 一直是正常的）。现在 `Ctrl++`、`Ctrl+=`、`Ctrl+Shift+=` 三组快捷键都可以放大；`Ctrl+-` 缩小、`Ctrl+0` 恢复实际大小保持不变。macOS 用户不受影响、无需更新。\n\n感谢 [@xsrkt26](https://github.com/xsrkt26) 在 [issue #1](https://github.com/SirKayZh/markmate/issues/1) 中的反馈 🙏\n\n---\n\n- ⬆️ Windows 用户：安装版会自动提示更新，也可直接[下载新版本](https://github.com/SirKayZh/markmate/releases/tag/v2.2.1)\n- 📖 历史版本改动见 [CHANGELOG](https://github.com/SirKayZh/markmate/blob/main/CHANGELOG.md)\n",
+      "html_url": "https://github.com/SirKayZh/markmate/releases/tag/v2.2.1",
       "assets": [
         {
-          "name": "MarkMate-2.2.0-arm64-mac.zip",
-          "size": 98900369,
-          "download_count": 2,
-          "url": "https://github.com/SirKayZh/markmate/releases/download/v2.2.0/MarkMate-2.2.0-arm64-mac.zip"
+          "name": "MarkMate-2.2.1-arm64-mac.zip",
+          "size": 98901419,
+          "download_count": 0,
+          "url": "https://github.com/SirKayZh/markmate/releases/download/v2.2.1/MarkMate-2.2.1-arm64-mac.zip"
         },
         {
-          "name": "MarkMate-2.2.0-arm64.dmg",
-          "size": 112312267,
-          "download_count": 3,
-          "url": "https://github.com/SirKayZh/markmate/releases/download/v2.2.0/MarkMate-2.2.0-arm64.dmg"
+          "name": "MarkMate-2.2.1-arm64.dmg",
+          "size": 112312608,
+          "download_count": 0,
+          "url": "https://github.com/SirKayZh/markmate/releases/download/v2.2.1/MarkMate-2.2.1-arm64.dmg"
         },
         {
-          "name": "MarkMate-2.2.0-mac.zip",
-          "size": 104955383,
-          "download_count": 2,
-          "url": "https://github.com/SirKayZh/markmate/releases/download/v2.2.0/MarkMate-2.2.0-mac.zip"
+          "name": "MarkMate-2.2.1-mac.zip",
+          "size": 104956433,
+          "download_count": 0,
+          "url": "https://github.com/SirKayZh/markmate/releases/download/v2.2.1/MarkMate-2.2.1-mac.zip"
         },
         {
-          "name": "MarkMate-2.2.0-x64-portable.exe",
-          "size": 83805503,
-          "download_count": 3,
-          "url": "https://github.com/SirKayZh/markmate/releases/download/v2.2.0/MarkMate-2.2.0-x64-portable.exe"
+          "name": "MarkMate-2.2.1-x64-portable.exe",
+          "size": 83805693,
+          "download_count": 0,
+          "url": "https://github.com/SirKayZh/markmate/releases/download/v2.2.1/MarkMate-2.2.1-x64-portable.exe"
         },
         {
-          "name": "MarkMate-2.2.0-x64-setup.exe",
-          "size": 84023356,
-          "download_count": 3,
-          "url": "https://github.com/SirKayZh/markmate/releases/download/v2.2.0/MarkMate-2.2.0-x64-setup.exe"
+          "name": "MarkMate-2.2.1-x64-setup.exe",
+          "size": 84023577,
+          "download_count": 0,
+          "url": "https://github.com/SirKayZh/markmate/releases/download/v2.2.1/MarkMate-2.2.1-x64-setup.exe"
         },
         {
-          "name": "MarkMate-2.2.0-x64.dmg",
-          "size": 121821066,
-          "download_count": 2,
-          "url": "https://github.com/SirKayZh/markmate/releases/download/v2.2.0/MarkMate-2.2.0-x64.dmg"
+          "name": "MarkMate-2.2.1-x64.dmg",
+          "size": 121822933,
+          "download_count": 0,
+          "url": "https://github.com/SirKayZh/markmate/releases/download/v2.2.1/MarkMate-2.2.1-x64.dmg"
         }
       ]
     },
     "clouddock": {
-      "tag": "v1.7.1",
-      "name": "CloudDock v1.7.1",
-      "published_at": "2026-10-19T15:49:57Z",
-      "notes_md": "## 修复\n\n### 密码库静默失效（v1.6.0 起的回归）\n- 根因：vaultClient 缺失应答监听，子进程回复无人接收，所有密码库操作必然超时——重启后表现为「密码全没了」，实际密文完好\n- vaultClient 补上消息分发 + 初始化超时 20s→60s + 支持自动重试（杀旧子进程重拉）\n- 密码菜单失败时显示「⚠️ 初始化失败 · 重试初始化…」，不再静默\n- 初始化不再做破坏性清空：磁盘密文永远保留，删除只走显式删除账号\n\n### 其他\n- 部署脚本同步 Info.plist / app package.json 版本号（此前显示 1.5.0 误导排障）\n- ⚠️ Bundle ID 由 com.dylanzheng.clouddock 变更为 com.sirkayzh.clouddock：从旧版升级后 macOS 可能要求重新授权一次「完全磁盘访问」等权限；密码库钥匙串条目名未变，已保存密码不受影响\n\n## 测试\n新增 tests/vaultChild.test.ts 7 用例（含初始化不清空磁盘回归），vitest 31/31 通过，tsc 零错误。\n\n## 安装\n下载 `CloudDock-1.7.1.dmg`，拖入 Applications。已有用户可在应用内「帮助 ▸ 检查更新…」使用 `CloudDock-1.7.1-update.zip`。\n\nSHA-256\n- dmg: e3f39238dcc8062bb7caaa872c27a3d83040e8a1fa05cf487b405207bb3dd2e7\n- zip: 60304cde3b44a0d73fb97dca235665c2c7a215cf9ef3b93a35082221c27059d8",
-      "html_url": "https://github.com/SirKayZh/workpier/releases/tag/v1.7.1",
+      "tag": "v2.6.1",
+      "name": "WorkPier v2.6.1",
+      "published_at": "2026-10-24T11:27:45Z",
+      "notes_md": "## 修复\n\n- **修复自更新被误判为开发模式的关键 bug**：打包产物主可执行文件名此前仍为 `Electron`，Electron 据此判定 `app.isPackaged = false`，导致真实安装上「检查更新…」被「开发模式不支持自更新」拦截。现改名为 `WorkPier`，**应用内更新（手动 + 自动）自此版本起真正可用**\n\n## 注意\n\n- 2.6.0 及更早版本无法通过应用内更新升级（会被上述 bug 拦截），请直接下载 DMG 手动覆盖安装这一次；从 2.6.1 起后续版本将自动提醒并一键升级",
+      "html_url": "https://github.com/SirKayZh/workpier/releases/tag/v2.6.1",
       "assets": [
         {
-          "name": "CloudDock-1.7.1.dmg",
-          "size": 141990422,
-          "download_count": 2,
-          "url": "https://github.com/SirKayZh/workpier/releases/download/v1.7.1/CloudDock-1.7.1.dmg"
+          "name": "update.json",
+          "size": 642,
+          "download_count": 1,
+          "url": "https://github.com/SirKayZh/workpier/releases/download/v2.6.1/update.json"
+        },
+        {
+          "name": "WorkPier-2.6.1-win-x64.zip",
+          "size": 158104627,
+          "download_count": 0,
+          "url": "https://github.com/SirKayZh/workpier/releases/download/v2.6.1/WorkPier-2.6.1-win-x64.zip"
+        },
+        {
+          "name": "WorkPier-2.6.1.dmg",
+          "size": 142024777,
+          "download_count": 1,
+          "url": "https://github.com/SirKayZh/workpier/releases/download/v2.6.1/WorkPier-2.6.1.dmg"
         }
       ]
     },
