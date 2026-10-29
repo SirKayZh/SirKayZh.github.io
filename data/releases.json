@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T08:37:40.942347+00:00",
+  "updated_at": "2026-10-29T08:33:48.411233+00:00",
   "releases": {
     "markmate": {
       "tag": "v2.2.1",
@@ -47,29 +47,29 @@
       ]
     },
     "clouddock": {
-      "tag": "v2.6.1",
-      "name": "WorkPier v2.6.1",
-      "published_at": "2026-10-24T11:27:45Z",
-      "notes_md": "## 修复\n\n- **修复自更新被误判为开发模式的关键 bug**：打包产物主可执行文件名此前仍为 `Electron`，Electron 据此判定 `app.isPackaged = false`，导致真实安装上「检查更新…」被「开发模式不支持自更新」拦截。现改名为 `WorkPier`，**应用内更新（手动 + 自动）自此版本起真正可用**\n\n## 注意\n\n- 2.6.0 及更早版本无法通过应用内更新升级（会被上述 bug 拦截），请直接下载 DMG 手动覆盖安装这一次；从 2.6.1 起后续版本将自动提醒并一键升级",
-      "html_url": "https://github.com/SirKayZh/workpier/releases/tag/v2.6.1",
+      "tag": "v2.7.0",
+      "name": "WorkPier v2.7.0",
+      "published_at": "2026-10-28T14:31:15Z",
+      "notes_md": "## 新功能：多窗口\n\n- macOS：程序坞右键 WorkPier 图标，选「新建窗口」\n- 菜单栏「窗口 → 新建窗口」，快捷键 `⌘N`（Windows 为 `Ctrl+N`）\n- 右键账号，选「在新窗口打开」\n- 新窗口打开当前账号正在看的网页，登录态与主窗口共用，可以同时对照两个页面\n- 关掉其中一个窗口，其它窗口继续留着；全部关掉才退出\n- 后开窗口里另开的标签只在该窗口有效，关掉不保留。重启仍只恢复主窗口上次的标签和登录态\n\n## 下载\n\n- macOS（Apple Silicon）：`WorkPier-2.7.0.dmg`\n- Windows x64：`WorkPier-2.7.0-win-x64.zip`（解压后双击 `WorkPier\\WorkPier.exe`）\n- 已安装 2.6.1 的用户：下次启动约 5 秒后会提醒更新，也可在「帮助 ▸ 检查更新…」里一键升级\n\n## SHA-256\n\n- dmg: `7f04f10a0ddd2b72e62f13ff92ed1d8d6c0835293a47f19b9a17fd8c1bd0c3d5`\n- mac 更新包: `387a5ba00454f345e5b22eb5432a776e14c8949e47cf7d31128c24054fd6cd61`\n- win 更新包: `7e87d0a296bc5cde1a4829728d617e9a0fc788384349058d9cf04d16677a85d4`",
+      "html_url": "https://github.com/SirKayZh/workpier/releases/tag/v2.7.0",
       "assets": [
         {
           "name": "update.json",
-          "size": 642,
-          "download_count": 4,
-          "url": "https://github.com/SirKayZh/workpier/releases/download/v2.6.1/update.json"
+          "size": 753,
+          "download_count": 2,
+          "url": "https://github.com/SirKayZh/workpier/releases/download/v2.7.0/update.json"
         },
         {
-          "name": "WorkPier-2.6.1-win-x64.zip",
-          "size": 158104627,
+          "name": "WorkPier-2.7.0-win-x64.zip",
+          "size": 158020404,
           "download_count": 0,
-          "url": "https://github.com/SirKayZh/workpier/releases/download/v2.6.1/WorkPier-2.6.1-win-x64.zip"
+          "url": "https://github.com/SirKayZh/workpier/releases/download/v2.7.0/WorkPier-2.7.0-win-x64.zip"
         },
         {
-          "name": "WorkPier-2.6.1.dmg",
-          "size": 142024777,
-          "download_count": 1,
-          "url": "https://github.com/SirKayZh/workpier/releases/download/v2.6.1/WorkPier-2.6.1.dmg"
+          "name": "WorkPier-2.7.0.dmg",
+          "size": 142041551,
+          "download_count": 0,
+          "url": "https://github.com/SirKayZh/workpier/releases/download/v2.7.0/WorkPier-2.7.0.dmg"
         }
       ]
     },
