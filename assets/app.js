@@ -88,8 +88,10 @@
     var ua = navigator.userAgent;
     var mac = /Macintosh|Mac OS X/i.test(ua);
     var win = /Windows/i.test(ua);
+    var linux = /Linux/i.test(ua) && !/Android/i.test(ua);
     if (win) return "windows-x64";
     if (mac) return isAppleSilicon() ? "macos-arm64" : "macos-x64";
+    if (linux) return "linux-x64";
     return "unknown";
   }
 
@@ -97,6 +99,7 @@
     "macos-arm64": "macOS (Apple Silicon)",
     "macos-x64": "macOS (Intel)",
     "windows-x64": "Windows x64",
+    "linux-x64": "Linux x64",
     "unknown": "当前系统"
   };
 
@@ -105,6 +108,7 @@
     "macos-arm64": "macOS",
     "macos-x64": "macOS",
     "windows-x64": "Windows",
+    "linux-x64": "Linux",
     "unknown": "安装包"
   };
 
@@ -238,7 +242,7 @@
           '"><span class="dl-icon">⬇</span>前往 GitHub Release 下载</a>' +
           '<span class="dl-hint">未识别到你的系统，全部版本见下表</span></div>';
       }
-      var installKey = platformKey.indexOf("macos") === 0 ? "macos" : platformKey.indexOf("windows") === 0 ? "windows" : null;
+      var installKey = platformKey.indexOf("macos") === 0 ? "macos" : platformKey.indexOf("windows") === 0 ? "windows" : platformKey.indexOf("linux") === 0 ? "linux" : null;
       if (installKey && p.install && p.install[installKey]) {
         html += '<div class="note">' + esc(p.install[installKey]).replace(/xattr -cr [^\s]+/, function (m) { return "<code>" + m + "</code>"; }) + "</div>";
       }

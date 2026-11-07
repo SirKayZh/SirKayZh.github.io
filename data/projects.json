@@ -2,7 +2,7 @@
   "site": {
     "name": "大号哥的仓库",
     "tagline": "大厂产品经理 · 白天做方案，晚上写工具",
-    "intro": "一名大厂产品经理用 AI 编程亲手做的 macOS / Windows 桌面软件：编辑器、多账号浏览器、磁盘清理。全部开源，安装包免费下载。",
+    "intro": "一名大厂产品经理用 AI 编程亲手做的 macOS / Windows / Linux 桌面软件：编辑器、多账号浏览器、磁盘清理。全部开源，安装包免费下载。",
     "github": "https://github.com/SirKayZh",
     "footer_note": "所有工具均可免费使用，欢迎在 GitHub 提 Issue 反馈"
   },
@@ -11,9 +11,9 @@
       "slug": "markmate",
       "name": "MarkMate",
       "tagline": "轻量 WYSIWYG Markdown 编辑器",
-      "description": "所见即所得的 Markdown 编辑器，macOS / Windows 双平台。即时编辑、大纲导航、自动保存，内置 JSON / YAML / XML 查看器，一键导出 PDF / HTML / Word。",
+      "description": "所见即所得的 Markdown 编辑器，macOS / Windows / Linux。即时编辑、大纲导航、自动保存，内置 JSON / YAML / XML 查看器，一键导出 PDF / HTML / Word。",
       "repo": "SirKayZh/markmate",
-      "platforms": ["macOS", "Windows"],
+      "platforms": ["macOS", "Windows", "Linux"],
       "icon": "assets/img/markmate/icon.png",
       "featured": true,
       "order": 1,
@@ -22,8 +22,8 @@
         "大纲导航 — 长文档章节跳转",
         "自动保存 + 版本历史 — 不怕丢稿",
         "JSON / YAML / XML / JSONL 查看器 — 对话记录也能看",
-        "导出 PDF / HTML / Word (.docx)",
-        "macOS (Apple Silicon / Intel) + Windows 双平台"
+        "导出 PDF / HTML / Word / 长图",
+        "macOS (Apple Silicon / Intel)、Windows、Linux 三平台"
       ],
       "screenshots": [
         { "src": "assets/img/markmate/hero.png", "caption": "主界面 · macOS 浅色模式" },
@@ -33,15 +33,17 @@
       "downloads": {
         "macos-arm64": { "prefer": ["arm64.dmg"], "any": [".dmg"] },
         "macos-x64": { "prefer": ["x64.dmg", "-x64.dmg"], "any": [".dmg"] },
-        "windows-x64": { "prefer": ["setup.exe"], "any": [".exe"] }
+        "windows-x64": { "prefer": ["setup.exe"], "any": [".exe"] },
+        "linux-x64": { "prefer": ["AppImage"], "any": [".deb", ".run"] }
       },
       "install": {
         "macos": "双击 .dmg 安装，将 MarkMate 拖入「应用程序」。首次打开若提示「无法验证开发者」，在 Finder 中右键 App 选「打开」，或在终端执行 xattr -cr /Applications/MarkMate.app",
-        "windows": "运行 setup.exe 按引导安装；portable.exe 为绿色便携版，双击即用不写注册表"
+        "windows": "运行 setup.exe 按引导安装；portable.exe 为绿色便携版，双击即用不写注册表。SmartScreen 弹出时点「更多信息 → 仍要运行」",
+        "linux": "推荐 AppImage：chmod +x 后直接运行。系统没有 FUSE 时改跑同版本的 .run。Debian / Ubuntu 也可以装 .deb，不依赖 FUSE"
       },
       "faq": [
         { "q": "和 Typora 有什么区别？", "a": "MarkMate 免费开源，同样支持所见即所得编辑，额外内置 JSON/YAML/XML 结构化文件查看器和版本历史。" },
-        { "q": "支持哪些系统？", "a": "macOS 12+（Apple Silicon 与 Intel 均有原生包）和 Windows 10/11 (x64)。" }
+        { "q": "支持哪些系统？", "a": "macOS 12+（Apple Silicon 与 Intel 均有原生包）、Windows 10/11 (x64)、Linux x64（AppImage、deb；没有 FUSE 时用 .run）。" }
       ]
     },
     {
