@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T18:33:47.492146+00:00",
+  "updated_at": "2026-11-08T09:03:31.959663+00:00",
   "releases": {
     "markmate": {
       "tag": "v2.2.2",
@@ -74,7 +74,7 @@
         {
           "name": "update.json",
           "size": 753,
-          "download_count": 23,
+          "download_count": 26,
           "url": "https://github.com/SirKayZh/workpier/releases/download/v2.7.0/update.json"
         },
         {
