@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T09:35:47.088865+00:00",
+  "updated_at": "2026-11-14T09:01:18.709129+00:00",
   "releases": {
     "markmate": {
       "tag": "v2.2.2",
@@ -11,7 +11,7 @@
         {
           "name": "MarkMate-2.2.2-amd64.deb",
           "size": 79457050,
-          "download_count": 1,
+          "download_count": 2,
           "url": "https://github.com/SirKayZh/markmate/releases/download/v2.2.2/MarkMate-2.2.2-amd64.deb"
         },
         {
@@ -59,7 +59,7 @@
         {
           "name": "MarkMate-2.2.2-x86_64.run",
           "size": 168,
-          "download_count": 1,
+          "download_count": 2,
           "url": "https://github.com/SirKayZh/markmate/releases/download/v2.2.2/MarkMate-2.2.2-x86_64.run"
         }
       ]
@@ -74,7 +74,7 @@
         {
           "name": "update.json",
           "size": 753,
-          "download_count": 38,
+          "download_count": 39,
           "url": "https://github.com/SirKayZh/workpier/releases/download/v2.7.0/update.json"
         },
         {
