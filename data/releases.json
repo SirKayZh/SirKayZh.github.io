@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-15T09:30:22.586969+00:00",
+  "updated_at": "2026-11-16T09:49:28.843563+00:00",
   "releases": {
     "markmate": {
       "tag": "v2.2.2",
@@ -23,7 +23,7 @@
         {
           "name": "MarkMate-2.2.2-arm64.dmg",
           "size": 112314315,
-          "download_count": 1,
+          "download_count": 2,
           "url": "https://github.com/SirKayZh/markmate/releases/download/v2.2.2/MarkMate-2.2.2-arm64.dmg"
         },
         {
@@ -74,7 +74,7 @@
         {
           "name": "update.json",
           "size": 753,
-          "download_count": 39,
+          "download_count": 42,
           "url": "https://github.com/SirKayZh/workpier/releases/download/v2.7.0/update.json"
         },
         {
