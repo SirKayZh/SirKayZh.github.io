@@ -10,7 +10,7 @@
 | 项目 | 说明 | 仓库 |
 |---|---|---|
 | MarkMate | 轻量 WYSIWYG Markdown 编辑器（macOS / Windows） | [SirKayZh/markmate](https://github.com/SirKayZh/markmate) |
-| CloudDock | 多账号浏览器，同一网站同时登录多个账号 | [SirKayZh/clouddock](https://github.com/SirKayZh/clouddock) |
+| WorkPier | 同一个网站同时登录多个账号，侧边栏一点就切 | [SirKayZh/workpier](https://github.com/SirKayZh/workpier) |
 | 微信瘦身找回助手 | 微信重复文件清理与误删找回（即将开源） | 私有 |
 
 ## 架构（纯静态，零构建）

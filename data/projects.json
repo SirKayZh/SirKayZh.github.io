@@ -48,34 +48,35 @@
     },
     {
       "slug": "clouddock",
-      "name": "CloudDock",
-      "tagline": "多账号浏览器",
-      "description": "像 Chrome 一样浏览任意网站，但每个账号一个独立会话：同一网站同时登录多个账号，侧边栏一键切换，无需退出重登。",
-      "repo": "SirKayZh/clouddock",
-      "platforms": ["macOS"],
+      "name": "WorkPier",
+      "tagline": "同一个网站，多个账号一起在线",
+      "description": "云控制台、文档、邮箱，一个网站要登好几个号时，把它们放在同一个窗口的侧边栏里。点一下就切过去，当前页面不用重新加载，其它账号也不用退出。",
+      "repo": "SirKayZh/workpier",
+      "platforms": ["macOS", "Windows"],
       "icon": "assets/img/clouddock/icon.svg",
       "featured": true,
       "order": 2,
       "highlights": [
-        "多账号独立会话 — Cookie / 缓存 / 存储完全隔离（Chromium session partition 级）",
-        "同一网站同时在线多个账号，侧边栏或 ⌘1~⌘9 秒切",
-        "每个账号可开多个标签页，登录态共享",
-        "添加账号零输入 — 网页里正常登录，账号名自动识别",
-        "持久登录 + 重启自动恢复全部会话",
-        "记住密码（对齐 Chrome 行为）— AES-256-GCM 加密，密钥存系统钥匙串，独立子进程加解密"
+        "多个登录放在一个窗口里，点侧边栏就切换，页面不用重新加载",
+        "同一个网站可以同时登着不同账号，互不影响",
+        "每个账号自己的标签页，也可以再开一个窗口对照着看",
+        "添加账号不用填表，在网页里照常登录，名字能认出来就自动写上",
+        "退出再打开，回到上次的页面，登录还在",
+        "密码跟着这个账号走，另一个账号看不到"
       ],
       "screenshots": [],
       "downloads": {
         "macos-arm64": { "prefer": [".dmg"], "any": [".dmg"] },
-        "macos-x64": { "prefer": [".dmg"], "any": [".dmg"] }
+        "windows-x64": { "prefer": ["win-x64.zip"], "any": ["win-x64.zip"] }
       },
       "install": {
-        "macos": "双击 .dmg 安装，将 CloudDock 拖入「应用程序」。首次打开若提示「无法验证开发者」，在 Finder 中右键 App 选「打开」，或在终端执行 xattr -cr /Applications/CloudDock.app",
-        "windows": ""
+        "macos": "打开 .dmg，把 WorkPier 拖进「应用程序」。当前安装包是 Apple 芯片。首次打开若提示无法验证开发者，在 Finder 里右键应用选「打开」，或在终端执行 xattr -cr /Applications/WorkPier.app",
+        "windows": "下载 win-x64.zip，解压到任意目录，双击 WorkPier.exe。不用安装。SmartScreen 弹出时选「更多信息」，再选「仍要运行」。"
       },
       "faq": [
-        { "q": "和多个浏览器 Profile 有什么区别？", "a": "Profile 之间切换要整窗重载；CloudDock 是会话级隔离，每个账号一个独立会话，侧边栏点击即切，不重载页面，且所有账号同屏共存。" },
-        { "q": "密码安全吗？", "a": "密码使用 AES-256-GCM 加密，主密钥存放在 macOS 登录钥匙串；加解密在独立最小权限子进程完成，明文不进主进程内存，磁盘只存密文。" }
+        { "q": "和 Chrome 多用户有什么区别？", "a": "Chrome 每个用户是自己的窗口，切换时整窗换掉。WorkPier 把这些登录放在同一个窗口的侧边栏里，点一下就切，你没在看的账号仍然登录着。" },
+        { "q": "密码安全吗？", "a": "密码加密后存在这台电脑上。macOS 的密钥在登录钥匙串里，Windows 的密钥只属于当前这个 Windows 用户。网页里的脚本读不回 WorkPier 替你保存的密码。" },
+        { "q": "关掉之后还要重新登录吗？", "a": "一般不用。下次打开会回到上次的页面，登录还在。如果网站自己让登录失效，就需要重新登录一次。" }
       ]
     },
     {
