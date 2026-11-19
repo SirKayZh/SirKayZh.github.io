@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18T10:14:20.896180+00:00",
+  "updated_at": "2026-11-19T10:25:02.588135+00:00",
   "releases": {
     "markmate": {
       "tag": "v2.2.2",
@@ -41,7 +41,7 @@
         {
           "name": "MarkMate-2.2.2-x64-setup.exe",
           "size": 84025571,
-          "download_count": 3,
+          "download_count": 5,
           "url": "https://github.com/SirKayZh/markmate/releases/download/v2.2.2/MarkMate-2.2.2-x64-setup.exe"
         },
         {
@@ -65,29 +65,29 @@
       ]
     },
     "clouddock": {
-      "tag": "v2.7.0",
-      "name": "WorkPier v2.7.0",
-      "published_at": "2026-10-28T14:31:15Z",
-      "notes_md": "这一版可以开两个窗口，对照着看同一个账号里的两个页面。\n\n- macOS：在程序坞里右键 WorkPier，选「新建窗口」。也可以用菜单「窗口 → 新建窗口」，或按 `⌘N`（Windows 是 `Ctrl+N`）\n- 右键一个账号，选「在新窗口打开」\n- 新窗口打开的是你正在看的网页，登录还是这个账号的\n- 关掉其中一个窗口，其它窗口还在。全部关掉才退出\n- 后开的窗口里临时开的标签，关掉就不留。下次打开，还是恢复主窗口上次的标签和登录\n\nmacOS 下载 `WorkPier-2.7.0.dmg`。Windows 下载 `WorkPier-2.7.0-win-x64.zip`，解压后双击 `WorkPier\\WorkPier.exe`。已经装着 2.6.1 的，下次打开大约 5 秒后会提醒更新，也可以在「帮助 → 检查更新」里自己升级。\n",
-      "html_url": "https://github.com/SirKayZh/workpier/releases/tag/v2.7.0",
+      "tag": "v2.8.0",
+      "name": "WorkPier v2.8.0",
+      "published_at": "2026-11-18T10:27:55Z",
+      "notes_md": "这一版加上收藏、常用网站，并让登录保持得更久。\n\n- 可以把正在看的网页收进收藏\n- 新标签页上的常用网站可以自己加、改名、调整顺序，也可以恢复成默认的一组\n- 同一个账号里的标签页可以拖动排序\n- 网站本来一退出就丢掉的登录，会留到浏览器允许的最长时间（400 天）。每次打开，以及开着的时候每 12 小时，到期日会再往后推。网站自己让登录失效时，还是要重新登录\n- Windows 上 `Ctrl+1` 到 `Ctrl+9` 可以切当前工作区里的账号，和侧边栏上标的快捷键一致。macOS 仍是 `⌘1` 到 `⌘9`\n- 焦点在网页里时，Windows 也能用菜单上的快捷键：`Ctrl+F` 查找，`Ctrl+N` 新窗口，`Ctrl+T` / `Ctrl+W` 开关标签，`Ctrl+B` 收起侧边栏，`Ctrl+D` 收藏，以及后退、前进、刷新、缩放。macOS 仍是 `⌘`\n- 页内查找会马上标出匹配了几处。刚输入停在第一处，`Ctrl+G` 下一处，`Ctrl+Shift+G` 上一处\n- 在「密码」菜单里删掉一条已保存的密码后，这一条会马上从菜单里消失\n\nmacOS 下载 `WorkPier-2.8.0.dmg`。Windows 下载 `WorkPier-2.8.0-win-x64.zip`，解压后双击 `WorkPier\\WorkPier.exe`。已经装着 2.6.1 或 2.7.0 的，下次打开大约 5 秒后会提醒更新，也可以在「帮助 → 检查更新」里自己升级。",
+      "html_url": "https://github.com/SirKayZh/workpier/releases/tag/v2.8.0",
       "assets": [
         {
           "name": "update.json",
-          "size": 753,
-          "download_count": 64,
-          "url": "https://github.com/SirKayZh/workpier/releases/download/v2.7.0/update.json"
+          "size": 399,
+          "download_count": 2,
+          "url": "https://github.com/SirKayZh/workpier/releases/download/v2.8.0/update.json"
         },
         {
-          "name": "WorkPier-2.7.0-win-x64.zip",
-          "size": 158020404,
-          "download_count": 0,
-          "url": "https://github.com/SirKayZh/workpier/releases/download/v2.7.0/WorkPier-2.7.0-win-x64.zip"
-        },
-        {
-          "name": "WorkPier-2.7.0.dmg",
-          "size": 142041551,
+          "name": "WorkPier-2.8.0-win-x64.zip",
+          "size": 158029017,
           "download_count": 1,
-          "url": "https://github.com/SirKayZh/workpier/releases/download/v2.7.0/WorkPier-2.7.0.dmg"
+          "url": "https://github.com/SirKayZh/workpier/releases/download/v2.8.0/WorkPier-2.8.0-win-x64.zip"
+        },
+        {
+          "name": "WorkPier-2.8.0.dmg",
+          "size": 142040210,
+          "download_count": 1,
+          "url": "https://github.com/SirKayZh/workpier/releases/download/v2.8.0/WorkPier-2.8.0.dmg"
         }
       ]
     },
