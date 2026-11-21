@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-20T10:05:28.343881+00:00",
+  "updated_at": "2026-11-21T09:53:48.902643+00:00",
   "releases": {
     "markmate": {
       "tag": "v2.2.2",
@@ -41,7 +41,7 @@
         {
           "name": "MarkMate-2.2.2-x64-setup.exe",
           "size": 84025571,
-          "download_count": 5,
+          "download_count": 6,
           "url": "https://github.com/SirKayZh/markmate/releases/download/v2.2.2/MarkMate-2.2.2-x64-setup.exe"
         },
         {
